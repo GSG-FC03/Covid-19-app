@@ -37,15 +37,11 @@ header .dark-mode{
 .container{
     text-align: center;
 }
-
 .container .part{
     width: 350px;
     height: 510px;
-    margin-top: 47px;
-    margin-bottom: 57px;
+    margin: 47px 0 57px 10px;
     text-align: center;
-    margin-left: 10px;
-    /* margin-right: 20px; */
     padding-right: 11px;
     box-shadow: 0px 5px 16px 0px #c2bfbf;
     border-radius: 20px;
@@ -57,16 +53,11 @@ header .dark-mode{
 }
 .container .part .para {
     text-align: center;
-    margin-left: 30px;
-    margin-right: 30px;
+    margin: 5px 30 0px 30px;
     font-size: 28px;
-    margin-top: 5px;
     font-weight: bold;
-
 }
-
 .img-con{
-
     height: 126px;
     margin-bottom: 34px;
     margin-top: 51px;
