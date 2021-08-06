@@ -34,3 +34,47 @@ header .dark-mode{
     padding-top: 33px;
 
 }
+.container{
+    text-align: center;
+}
+
+.container .part{
+    width: 350px;
+    height: 510px;
+    margin-top: 47px;
+    margin-bottom: 57px;
+    text-align: center;
+    margin-left: 10px;
+    /* margin-right: 20px; */
+    padding-right: 11px;
+    box-shadow: 0px 5px 16px 0px #c2bfbf;
+    border-radius: 20px;
+}
+.container .part .title{
+    margin-top: 21px;
+    margin-bottom: 21px;
+    font-size: 36px;
+}
+.container .part .para {
+    text-align: center;
+    margin-left: 30px;
+    margin-right: 30px;
+    font-size: 28px;
+    margin-top: 5px;
+    font-weight: bold;
+
+}
+
+.img-con{
+
+    height: 126px;
+    margin-bottom: 34px;
+    margin-top: 51px;
+}
+.number{
+    font-weight: bold;
+    font-size: 36px;
+    margin-top: 40px;
+    color: #ff9500;
+    text-decoration: none;
+}
