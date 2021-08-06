@@ -1,0 +1,87 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+:root {
+    --primary-color : #FBAD37;
+    --secondary-color : #ffff;
+    --fonts-color : black ;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--secondary-color);
+    color: var(--fonts-color);
+}
+ .header{
+    justify-content: space-between;
+    height: 94px;
+    width: 100%;
+    box-shadow: 0px 5px 16px 0px  #c2bfbf;
+}
+.header .back-icon{
+    height: 22px;
+    margin-left: 15px;
+    margin-top: 33px;
+}
+header .covid-19 {
+    padding-top: 26px;
+    padding-left: 30px;
+    display: inline;
+    
+}
+.covid-img{
+    height: 30px;
+}
+header .dark-mode-icon{
+    height: 40px;
+    float: right;
+    padding-right: 20px;
+    padding-top: 26px;
+
+} 
+
+.container{
+    text-align: center;
+}
+
+.container .part{
+    width: 314px;
+    height: 198px;
+    margin-top: 47px;
+    text-align: center;
+    margin-left: 50px;
+    box-shadow: 0px 5px 16px 0px  #c2bfbf;
+    border-radius: 20px;
+}
+.container .part .title{
+    margin-top: 21px;
+    margin-bottom: 21px;
+    font-size: 36px;
+}
+.container .part .para {
+    text-align: center;
+    margin-left: 44px;
+    margin-right: 44px;
+    font-size: 18px;
+    font-weight: bold;
+    
+}
+.img-adv{
+    width: 102.5px;
+    height: 89px;
+    margin-top: 27px;
+}
+
+
+.container .btn{
+    width: 171px;
+    height: 54px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    margin-top: 67px;
+    margin-bottom: 87px;
+    border-radius: 20px;
+    border: none;
+    font-size: 25px;
+}
