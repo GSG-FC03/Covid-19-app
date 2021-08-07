@@ -8,6 +8,13 @@
     --fonts-color : black ;
     --part-color:rgb(250, 250, 250);
 }
+.dark-mode {
+    --primary-color : #FBAD37;
+    --secondary-color : rgb(24, 23, 23);
+    --fonts-color : #fff ;
+    --part-color:rgb(24, 23, 23);
+
+}
 body{
     font-family: 'Montserrat', sans-serif;
     background-color: var(--secondary-color);
