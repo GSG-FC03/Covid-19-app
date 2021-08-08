@@ -9,3 +9,7 @@ icon.onclick = function(){
         icon.src="../assets/dark-mode.png";
     }
 }
+document.getElementById("button").onclick = function () {
+    location.href = "../advice/advice.html";
+    
+}
