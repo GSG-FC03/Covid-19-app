@@ -1,5 +1,5 @@
 //dark mode 
-var icon = document.getElementById("icon");
+const icon = document.getElementById("icon");
 icon.onclick = function(){
     document.body.classList.toggle("dark-mode");
     if ( document.body.classList.contains("dark-mode")) {
@@ -9,9 +9,11 @@ icon.onclick = function(){
         icon.src="../assets/dark-mode.png";
     }
 }
-document.getElementById("button").onclick = function () {
+const nextButton =document.getElementById("button");
+nextButton.onclick = function () {
     location.href = "../advice/advice.html";
 
 }
-document.getElementById("back").onclick = function () {
+const backIcon =document.getElementById("back");
+backIcon.onclick = function () {
     location.href = "../covid-vaccine-tracker/covid-vaccine-tracker.html";}
