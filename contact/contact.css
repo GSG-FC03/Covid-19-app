@@ -43,7 +43,7 @@ header .dark-mode{
     height: 25px;
     float: right;
     padding-right: 20px;
-    margin-left: 130px;
+    margin-left: 170px;
     padding-top: 33px;
 
 
@@ -53,8 +53,8 @@ header .dark-mode{
     
 }
 .container .part{
-    width: 350px;
-    height: 510px;
+    width: 388px;
+    height: 530px;
     margin: 47px 0 57px 10px;
     text-align: center;
     padding-right: 11px;
@@ -70,7 +70,7 @@ header .dark-mode{
 .container .part .para {
     text-align: center;
     margin: 5px 30 0px 30px;
-    font-size: 28px;
+    font-size: 27px;
     font-weight: bold;
     color:var(--fonts-color) ;
 }
