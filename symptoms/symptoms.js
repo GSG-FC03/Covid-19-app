@@ -11,5 +11,7 @@ icon.onclick = function(){
 }
 document.getElementById("button").onclick = function () {
     location.href = "../advice/advice.html";
-    
+
 }
+document.getElementById("back").onclick = function () {
+    location.href = "../covid-vaccine-tracker/covid-vaccine-tracker.html";}
