@@ -8,3 +8,6 @@
                 icon.src="../assets/dark-mode.png";
             }
         }
+        document.getElementById("back").onclick = function () {
+            location.href = "../advice/advice.html";
+        }
