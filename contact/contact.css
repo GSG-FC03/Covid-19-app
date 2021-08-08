@@ -86,3 +86,31 @@ header .dark-mode{
     color: #ff9500;
     text-decoration: none;
 }
+
+@media only screen and (min-width :1300px){
+    .container .part {
+    width: 1260px;
+    height: 900px;
+    }
+    .img-con {
+        height: 350px;
+        margin-bottom: 70px;
+    }
+    .container .part .para {
+        font-size: 52px;
+    }
+    .number {
+        font-size: 66px;
+        margin-top: 60px;
+    }
+    .header .back {
+        margin-left: 30px;
+        font-size: 33px
+    }
+    header .covid-19 {
+        font-size: 44px;
+    }
+    header .dark-mode {
+        height: 40px;
+        margin-left: 970px;
+}
