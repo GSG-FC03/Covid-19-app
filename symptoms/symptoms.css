@@ -87,12 +87,13 @@ header .dark-mode{
     font-size: 25px;
 }
 
-/* Responsive Design */
+/* Responsive Design for full screen  */
 @media only screen and (min-width :1300px){
     .part-1{
         display: flex;
         margin-left: 30px;
-        justify-content: space-around;
+        justify-content:space-around;
+        flex-wrap: wrap;
     }
    #button{
       margin-left: 500px;
@@ -102,3 +103,19 @@ header .dark-mode{
     margin-left: 900px;
    }
 }
+/* responsive Design for ipad pro */
+ @media only screen and (width :1024px){
+    .part-1{
+        display: flex;
+         margin-left: 30px; 
+         flex-wrap: wrap;
+        justify-content: space-evenly; 
+    }
+    #button{
+        margin-left: 340px;
+       
+     }
+     .dark-icon{
+        margin-left: 550px;
+       }
+} 
