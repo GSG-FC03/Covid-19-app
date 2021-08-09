@@ -1,0 +1,91 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+:root {
+    --primary-color : #FBAD37;
+    --secondary-color : #ffff;
+    --fonts-color : black ;
+}
+.dark-mode {
+    --primary-color : #FBAD37;
+    --secondary-color : rgb(24, 23, 23);
+    --fonts-color : #fff ;
+    --header-color:#fdb952;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color:var(--secondary-color) ;
+}
+
+.header{
+    height: 94px;
+    width: 100%;
+    box-shadow: 0px 5px 16px 0px  #c2bfbf;
+    display: flex;
+background-color:  var(--header-color) ;
+}
+.header .back{
+    height: 22px;
+    margin-left: 15px;
+    margin-top: 36px;
+    font-size: 20px;
+    color:var(--fonts-color);
+
+}
+header .covid-19 {
+    padding-top: 25px;
+    padding-left: 20px;
+    color:var(--fonts-color) ;
+
+}
+.covid-img{
+    height: 26px;
+}
+header .dark-mode{
+    height: 25px;
+    float: right;
+    padding-right: 20px;
+    margin-left: 130px;
+    padding-top: 33px;
+
+
+}
+.container{
+    text-align: center;
+    
+}
+.container .part{
+    width: 350px;
+    height: 510px;
+    margin: 47px 0 57px 10px;
+    text-align: center;
+    padding-right: 11px;
+    box-shadow: 0px 5px 16px 0px #c2bfbf;
+    border-radius: 20px;
+    
+}
+.container .part .title{
+    margin-top: 21px;
+    margin-bottom: 21px;
+    font-size: 36px;
+}
+.container .part .para {
+    text-align: center;
+    margin: 5px 30 0px 30px;
+    font-size: 28px;
+    font-weight: bold;
+    color:var(--fonts-color) ;
+}
+.img-con{
+    height: 126px;
+    margin-bottom: 34px;
+    margin-top: 51px;
+}
+.number{
+    font-weight: bold;
+    font-size: 36px;
+    margin-top: 40px;
+    color: #ff9500;
+    text-decoration: none;
+}
