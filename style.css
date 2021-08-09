@@ -83,3 +83,23 @@ header .dark-mode {
     text-align: left;
   }
 }
+@media screen and (max-width: 1024px) and (min-width: 450px) {
+  .img-home {
+    display: block;
+    width: 600px;
+    margin-left: 200px;
+
+}
+.part-2 {
+  margin-top: 100px;
+
+}
+.container .text-home {
+  font-size: 45px;
+
+}
+.container .btn-start {
+  width: 180px;
+  height: 60px;
+}
+}
