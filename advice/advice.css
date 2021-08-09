@@ -11,9 +11,8 @@
 .dark-mode {
     --primary-color : #FBAD37;
     --secondary-color : rgb(24, 23, 23);
-    --fonts-color : #fff ;
+    --fonts-color : #fff;
     --part-color:rgb(24, 23, 23);
-
 }
 body{
     font-family: 'Montserrat', sans-serif;
@@ -22,7 +21,6 @@ body{
 }
 .header{
     display: flex;
-    /*justify-content: space-between;*/
     height: 94px;
     width: 100%;
     margin-top: -20px;
@@ -34,7 +32,7 @@ body{
     padding-top: 30px;
     font-size: 25px;
 }
-header .covid-19 {
+header .covid-19{
     padding-top: 26px;  
     padding-left: 40px;
     display: inline;  
@@ -67,7 +65,7 @@ header .dark-mode-icon{
     margin-bottom: 21px;
     font-size: 36px;
 }
-.container .part .para {
+.container .part .para{
     text-align: center;
     margin-left: 44px;
     margin-right: 44px;
