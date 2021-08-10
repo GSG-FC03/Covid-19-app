@@ -4,8 +4,56 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link   rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200&display=swap">
+    <script
+      src="https://kit.fontawesome.com/620f3808e1.js" 
+      crossorigin="anonymous">
+    </script>
     <link rel="stylesheet" href="./covid-vaccine-tracker.css" />
     <title>covid-vaccine-tracker</title>
   </head>
-  <body></body>
+  <body>
+     <!-- header of page -->
+     <header class="header">
+      <i class="fas fa-arrow-left back" id="back"></i>
+      <h1 class="covid-19">C<img src="../assets/coviddd.png" class="covid-img">vid-19</h1>
+      <div class="dark-icon"> <img src="../assets/dark-mode.png" class="dark-mode" id="icon"> </div>
+      
+  </header>
+    <!-- Search bar -->
+    <div class="Search-section">
+      <input
+        list="countries"
+        id="selectedCountry"
+        placeholder="     search..."
+      />
+      <button id="search-button">Search</button>
+         <!-- Card Style -->
+         <div class="containar">
+          <div class="green-img">
+              <img src="../assets/vaccine-number.png">
+           </div>
+           <div class="vaccine-title">
+               <h1>Covid Vaccine Tracker</h1>
+           </div>
+            </div>
+                <!-- two button -->
+          <div class="two-button">
+            <button data-modal-target="#modal" class="btn-1">chart</button>
+            <button  class="btn-2" id="Symptoms-button">Symptoms</button>
+          </div>
+           <!-- Making popup -->
+           <div class="modal" id="modal">
+            <div class="modal-header">
+              <button data-close-button class="close-button">&times;</button>
+            </div>
+
+            <div class="modal-body">
+            </div>
+        </div>
+        <div id="overlay"></div>
+        <script src="../covid-vaccine-tracker/covid-vaccine-tracker.js"></script>
+  </body>
 </html>
