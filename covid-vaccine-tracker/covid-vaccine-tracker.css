@@ -77,3 +77,30 @@ Search-section {
     border-radius: 0px 40px 40px 0px;
     margin-top: 11px;
   }
+  /* Card Style */
+  .containar{
+    width: 318px;
+    height: 323px;
+        background: #FFFFFF;
+        box-shadow: 0px 5px 16px rgba(128, 128, 128, 0.2);
+        border-radius: 20px;
+        margin-left: 30px;
+        margin-top: 27px;
+    }
+  .green-img{
+      padding-left: 110px;
+      padding-top: 50px;
+  }
+  .fetchApiNumber{
+    width: 131px;
+    height: 31px;
+    padding-left: 105px;
+    padding-top: 15px;
+    color: #4BCC58;
+  }
+  .vaccine-title{
+    padding-top: 80px;
+    font-size: 15px;
+    padding-left: 10px;
+    text-align: center;
+  }
