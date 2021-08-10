@@ -104,3 +104,26 @@ Search-section {
     padding-left: 10px;
     text-align: center;
   }
+   /* Style for two-button */
+   .btn-1  {
+    width: 171px;
+    height: 54px;
+    background-color: #FBAD37;
+    color: #ffff;
+    margin-top: 20px; 
+    margin-left: 90px;
+    border-radius: 20px;
+    border: none;
+    font-size: 25px;
+    }
+    .btn-2{
+    width: 171px;
+    height: 54px;
+    background-color: #FBAD37;
+    color: #ffff;
+    border-radius: 20px;
+    border: none;
+    font-size: 25px; 
+    margin-left: 90px;
+    margin-top: 40px; 
+    }
