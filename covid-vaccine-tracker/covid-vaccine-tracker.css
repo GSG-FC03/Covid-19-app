@@ -46,3 +46,34 @@ header .dark-mode{
     padding-top: 33px;
 
 }
+/* Style Search bar */
+Search-section {
+    display: flex;
+    flex-wrap: wrap;  
+    justify-items: center;
+    margin-left: 10%;
+    margin-top: 50px;
+    z-index: 100; 
+    width: 60%;
+  }
+  #selectedCountry {
+    border: none;
+    outline: none;
+    background-color: #afaaaa9c;
+    width: 200px;
+    height: 45px;
+    border-radius: 40px 1px 0px 40px;
+    margin: 10px;
+    padding-left: 10px;
+  }
+  #search-button {
+    background-color: #fc9906c0;;
+    color: white;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    width: 100px;
+    height: 45px;
+    border-radius: 0px 40px 40px 0px;
+    margin-top: 11px;
+  }
