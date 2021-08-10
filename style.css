@@ -67,7 +67,7 @@ header .dark-mode {
   }
   .container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
   }
   .part-1 {
     width: 30%;
@@ -88,18 +88,15 @@ header .dark-mode {
     display: block;
     width: 600px;
     margin-left: 200px;
-
-}
-.part-2 {
-  margin-top: 100px;
-
-}
-.container .text-home {
-  font-size: 45px;
-
-}
-.container .btn-start {
-  width: 180px;
-  height: 60px;
-}
+  }
+  .part-2 {
+    margin-top: 100px;
+  }
+  .container .text-home {
+    font-size: 45px;
+  }
+  .container .btn-start {
+    width: 180px;
+    height: 60px;
+  }
 }
