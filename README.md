@@ -14,10 +14,10 @@
 * We add advices to protect you from covid-19.
 * We add the syndrome of covid-19.
 
-## design link
-https://www.figma.com/file/xGo4z5C2UQMyTqf2TKuDFK/Covid-19-Team4?node-id=0%3A1
-## live link
-https://gsg-fc03.github.io/Covid-19-app/
+## links :
+  [design link](https://www.figma.com/file/xGo4z5C2UQMyTqf2TKuDFK/Covid-19-Team4?node-id=0%3A1)
+
+   [live link](https://gsg-fc03.github.io/Covid-19-app/)
 
 
 
