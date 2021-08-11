@@ -36,3 +36,8 @@ function closeModal(modal) {
   modal.classList.remove('active')
   overlay.classList.remove('active')
 }
+//next page 
+document.getElementById("Symptoms-button").onclick = function () {
+    location.href = "../symptoms/symptoms.html";
+
+}
