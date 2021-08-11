@@ -10,7 +10,7 @@ icon.onclick = function(){
 
 //popup
 const button = document.querySelector("#Symptoms-button");
-
+const myCircule = document.getElementById("myCircule")
 button.addEventListener("click", move);
 function move() {
   window.location.href = "../Symptoms/Symptoms.html";
@@ -23,6 +23,9 @@ openModalButtons.forEach((button) => {
   button.addEventListener("click", () => {
     const modal = document.querySelector(button.dataset.modalTarget);
     openModal(modal);
+    myCircule.style.setProperty('stroke-dasharray',( (156-156*totalPerHundred).toString()+" "+(156*totalPerHundred).toString()))
+    console.log(totalPerHundred);
+   
   });
 });
 
@@ -274,7 +277,7 @@ function createDatalist() {
     createNewOption();
   }
 }
-
+let totalPerHundred ;
 function getVaccineData(countrycode) {
   const url = `https://disease.sh/v3/covid-19/vaccine/coverage/countries/${countrycode}?lastdays=30&fullData=true`;
   let i;
@@ -284,7 +287,9 @@ function getVaccineData(countrycode) {
       for (i = data.timeline.length - 1; i >= 0; i--) {
         if (data.timeline[i].daily > 0) break;
       }
+     
       total.textContent = data.timeline[i].total;
       number.appendChild(total);
+      totalPerHundred=(data.timeline[i].totalPerHundred)/100;
     });
 }

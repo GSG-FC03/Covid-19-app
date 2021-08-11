@@ -200,7 +200,7 @@ circle {
   fill: #69e876;
   stroke: #655;
   stroke-width: 50;
-  stroke-dasharray: 60 158; /* 2π × 25 ≈ 158 */
+  /* stroke-dasharray: 60 158; 2π × 25 ≈ 158 */
 }
 svg {
   transform: rotate(-90deg);
