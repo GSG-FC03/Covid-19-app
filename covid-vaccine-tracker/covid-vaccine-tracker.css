@@ -21,12 +21,12 @@ body {
   width: 100%;
   box-shadow: 0px 5px 16px 0px #c2bfbf;
   display: flex;
-  background-color: var(--secondary-color);
+  /* background-color: var(--secondary-color); */
 }
 #back {
   height: 22px;
   margin-left: 15px;
-  margin-top: 33px;
+  margin-top: 36px;
   font-size: 20px;
   color: var(--fonts-color);
 }
@@ -36,14 +36,14 @@ header .covid-19 {
   color: var(--fonts-color);
 }
 .covid-img {
-  height: 30px;
+  height: 26px;
 }
-header .dark-mode {
-  height: 25px;
+#icon {
+  height: 60px;
   float: right;
   padding-right: 20px;
-  margin-left: 130px;
-  padding-top: 33px;
+  margin-left: 170px;
+  padding-top: 30px;
 }
 /* Style Search bar */
 Search-section {
