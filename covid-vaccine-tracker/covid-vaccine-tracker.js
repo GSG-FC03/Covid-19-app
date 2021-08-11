@@ -245,6 +245,8 @@ let dataList = document.getElementById("countries");
 let countriesInputList = document.getElementById("selectedCountry");
 let searchCounty = document.getElementById("search-button");
 let number = document.getElementById("number");
+const total = document.createElement("h1");
+
 
 searchCounty.addEventListener("click", onClick);
 function onClick() {
@@ -252,6 +254,7 @@ function onClick() {
 }
 window.onload = () => {
   createDatalist();
+  
 };
 
 function createDatalist() {
@@ -274,8 +277,8 @@ function getVaccineData(countrycode) {
       for (i = data.timeline.length - 1; i >= 0; i--) {
         if (data.timeline[i].daily > 0) break;
       }
-      const total = document.createElement("h1");
       total.textContent = data.timeline[i].total;
       number.appendChild(total);
     });
+    
   }
