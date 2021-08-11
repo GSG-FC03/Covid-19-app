@@ -1,3 +1,13 @@
+const  icon = document.getElementById("icon");
+icon.onclick = function(){
+    document.body.classList.toggle("dark-mode");
+    if ( document.body.classList.contains("dark-mode")) {
+        icon.src="../assets/sun.svg";
+    }else{
+        icon.src="../assets/dark-mode.png";
+    }
+}
+
 //popup
 const button = document.querySelector("#Symptoms-button");
 
@@ -240,13 +250,11 @@ let countries = {
   China: "CN",
 };
 
-
 let dataList = document.getElementById("countries");
 let countriesInputList = document.getElementById("selectedCountry");
 let searchCounty = document.getElementById("search-button");
 let number = document.getElementById("number");
 const total = document.createElement("h1");
-
 
 searchCounty.addEventListener("click", onClick);
 function onClick() {
@@ -254,7 +262,6 @@ function onClick() {
 }
 window.onload = () => {
   createDatalist();
-  
 };
 
 function createDatalist() {
@@ -280,5 +287,4 @@ function getVaccineData(countrycode) {
       total.textContent = data.timeline[i].total;
       number.appendChild(total);
     });
-    
-  }
+}
