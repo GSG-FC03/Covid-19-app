@@ -1,193 +1,233 @@
-*{
-    padding: 0;
-    margin: 0;
+* {
+  padding: 0;
+  margin: 0;
 }
 :root {
-    --primary-color : #FBAD37;
-    --secondary-color : #ffff;
-    --fonts-color : black ;
+  --primary-color: #fbad37;
+  --secondary-color: #ffff;
+  --fonts-color: black;
 }
 .dark-mode {
-    --primary-color : #FBAD37;
-    --secondary-color : rgb(24, 23, 23);
-    --fonts-color : #fff ;
+  --primary-color: #fbad37;
+  --secondary-color: rgb(24, 23, 23);
+  --fonts-color: #fff;
 }
-body{
-    font-family: 'Montserrat', sans-serif;
-    background-color: var(--secondary-color);
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--secondary-color);
 }
-.header{
-    height: 94px;
-    width: 100%;
-    box-shadow: 0px 5px 16px 0px  #c2bfbf;
-    display: flex;
-    background-color: var(--secondary-color);
+.header {
+  height: 94px;
+  width: 100%;
+  box-shadow: 0px 5px 16px 0px #c2bfbf;
+  display: flex;
+  background-color: var(--secondary-color);
 }
-#back{
-    height: 22px;
-    margin-left: 15px;
-    margin-top: 33px;
-    font-size: 20px;
-    color: var(--fonts-color);
+#back {
+  height: 22px;
+  margin-left: 15px;
+  margin-top: 33px;
+  font-size: 20px;
+  color: var(--fonts-color);
 }
 header .covid-19 {
-    padding-top: 25px;
-    padding-left: 20px;
-    color: var(--fonts-color);
+  padding-top: 25px;
+  padding-left: 20px;
+  color: var(--fonts-color);
 }
-.covid-img{
-    height: 30px;
+.covid-img {
+  height: 30px;
 }
-header .dark-mode{
-    height: 25px;
-    float: right;
-    padding-right: 20px;
-    margin-left: 130px;
-    padding-top: 33px;
-
+header .dark-mode {
+  height: 25px;
+  float: right;
+  padding-right: 20px;
+  margin-left: 130px;
+  padding-top: 33px;
 }
 /* Style Search bar */
 Search-section {
-    display: flex;
-    flex-wrap: wrap;  
-    justify-items: center;
-    margin-left: 10%;
-    margin-top: 50px;
-    z-index: 100; 
-    width: 60%;
-  }
-  #selectedCountry {
-    border: none;
-    outline: none;
-    background-color: #afaaaa9c;
-    width: 200px;
-    height: 45px;
-    border-radius: 40px 1px 0px 40px;
-    margin: 10px;
-    padding-left: 10px;
-  }
-  #search-button {
-    background-color: #fc9906c0;;
-    color: white;
-    font-size: 18px;
-    border: none;
-    outline: none;
-    width: 100px;
-    height: 45px;
-    border-radius: 0px 40px 40px 0px;
-    margin-top: 11px;
-  }
-  /* Card Style */
-  .containar{
-    width: 318px;
-    height: 323px;
-        background: #FFFFFF;
-        box-shadow: 0px 5px 16px rgba(128, 128, 128, 0.2);
-        border-radius: 20px;
-        margin-left: 30px;
-        margin-top: 27px;
-    }
-  .green-img{
-      padding-left: 110px;
-      padding-top: 50px;
-  }
-  .fetchApiNumber{
-    width: 131px;
-    height: 31px;
-    padding-left: 105px;
-    padding-top: 15px;
-    color: #4BCC58;
-  }
-  .vaccine-title{
-    padding-top: 80px;
-    font-size: 15px;
-    padding-left: 10px;
-    text-align: center;
-  }
-   /* Style for two-button */
-   .btn-1  {
-    width: 171px;
-    height: 54px;
-    background-color: #FBAD37;
-    color: #ffff;
-    margin-top: 20px; 
-    margin-left: 90px;
-    border-radius: 20px;
-    border: none;
-    font-size: 25px;
-    }
-    .btn-2{
-    width: 171px;
-    height: 54px;
-    background-color: #FBAD37;
-    color: #ffff;
-    border-radius: 20px;
-    border: none;
-    font-size: 25px; 
-    margin-left: 90px;
-    margin-top: 40px; 
-    }
-     /* popup style */
-     *, *::after, *::before {
-        box-sizing: border-box;
-      }
-      
-      .modal {
-        position: fixed; 
-        top: 60%;
-        left: 50%;
-        transform: translate(-50%, -50%) scale(0);
-        transition: 200ms ease-in-out;
-        border: 1px solid rgb(250, 247, 247);
-        border-radius: 10px;
-        z-index: 10;
-        background-color:#fffafa;
-        width: 500px;
-        max-width: 100%;
-        height: 90%; 
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
-        
-    
-      }
-      
-      .modal.active {
-        transform: translate(-50%, -50%) scale(1);
-      }
+  display: flex;
+  flex-wrap: wrap;
+  justify-items: center;
+  margin-left: 10%;
+  margin-top: 50px;
+  z-index: 100;
+  width: 60%;
+}
+#selectedCountry {
+  border: none;
+  outline: none;
+  background-color: #afaaaa9c;
+  width: 200px;
+  height: 45px;
+  border-radius: 40px 1px 0px 40px;
+  margin: 10px;
+  padding-left: 10px;
+}
+#search-button {
+  background-color: #fc9906c0;
+  color: white;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  width: 100px;
+  height: 45px;
+  border-radius: 0px 40px 40px 0px;
+  margin-top: 11px;
+}
+/* Card Style */
+.containar {
+  width: 318px;
+  height: 323px;
+  background: #ffffff;
+  box-shadow: 0px 5px 16px rgba(128, 128, 128, 0.2);
+  border-radius: 20px;
+  margin-left: 30px;
+  margin-top: 27px;
+}
+.green-img {
+  padding-left: 110px;
+  padding-top: 50px;
+}
+.fetchApiNumber {
+  width: 131px;
+  height: 31px;
+  padding-left: 105px;
+  padding-top: 15px;
+  color: #4bcc58;
+}
+.vaccine-title {
+  padding-top: 80px;
+  font-size: 15px;
+  padding-left: 10px;
+  text-align: center;
+}
+/* Style for two-button */
+.btn-1 {
+  width: 171px;
+  height: 54px;
+  background-color: #fbad37;
+  color: #ffff;
+  margin-top: 20px;
+  margin-left: 90px;
+  border-radius: 20px;
+  border: none;
+  font-size: 25px;
+}
+.btn-2 {
+  width: 171px;
+  height: 54px;
+  background-color: #fbad37;
+  color: #ffff;
+  border-radius: 20px;
+  border: none;
+  font-size: 25px;
+  margin-left: 90px;
+  margin-top: 40px;
+}
+/* popup style */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
 
-      .modal-header {
-        padding: 10px 15px;
-      /* background-color: rgb(250, 248, 248); */
-       
-      } 
-      
-      .modal-header .close-button {
-        cursor: pointer;
-        border: none;
-        outline: none;
-        background: none;
-        font-size: 1.25rem;
-        font-weight: bold;
-        margin-left: 320px;
-      } 
-      .modal-body{
-      background-color: #F2EEEE;
-        width: 414px;
-        height: 556px;
-      }
-      #overlay {
-        position: fixed;
-        opacity: 0;
-        transition: 200ms ease-in-out;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-color: rgba(0, 0, 0, .5);
-        pointer-events: none;
-      }
-      
-      #overlay.active {
-        opacity: 1;
-        pointer-events: all;
-      } 
+.modal {
+  position: fixed;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border: 1px solid rgb(250, 247, 247);
+  border-radius: 10px;
+  z-index: 10;
+  background-color: #fffafa;
+  width: 500px;
+  max-width: 100%;
+  height: 90%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-header {
+  padding: 10px 15px;
+}
+
+.modal-header .close-button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-left: 320px;
+  color: #ccd2e3;
+}
+.modal-body {
+  background-color: #f2eeee;
+  width: 414px;
+  height: 556px;
+}
+#overlay {
+  position: fixed;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+circle {
+  fill: #69e876;
+  stroke: #655;
+  stroke-width: 50;
+  stroke-dasharray: 60 158; /* 2π × 25 ≈ 158 */
+}
+svg {
+  transform: rotate(-90deg);
+  background: #69e876;
+  border-radius: 50%;
+  margin-top: 143px;
+  margin-left: 140px;
+}
+#section-1 {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 37px;
+  margin-top: 50px;
+  width: 100%;
+}
+
+#section-2 {
+  display: flex;
+  justify-content: space-around;
+}
+#img-1 {
+  margin-right: 80px;
+  margin-top: 2px;
+}
+#img-2 {
+  margin-left: 48px;
+  margin-top: 25px;
+}
+#par-1 {
+  text-shadow: 2px 2px #dcd4d4;
+}
+#par-2 {
+  margin-left: 60px;
+  text-shadow: 2px 2px #dcd4d4;
+  margin-top: 20px;
+}
