@@ -259,3 +259,18 @@ function createDatalist() {
     createNewOption();
   }
 }
+
+function getVaccineData(countrycode) {
+  const url = `https://disease.sh/v3/covid-19/vaccine/coverage/countries/${countrycode}?lastdays=30&fullData=true`;
+  let i;
+  fetch(url)
+    .then((response) => response.json())
+    .then((data) => {
+      for (i = data.timeline.length - 1; i >= 0; i--) {
+        if (data.timeline[i].daily > 0) break;
+      }
+      const total = document.createElement("h1");
+      total.textContent = data.timeline[i].total;
+      number.appendChild(total);
+    });
+  }
