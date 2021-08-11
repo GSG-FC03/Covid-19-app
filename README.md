@@ -41,6 +41,7 @@ Also, we add page for syndrome of corona to let people know it.
 The last page is contact which provide you to know the information that help you in urgent cases.
 
 ## ✧User Story
+<img src="assets/userstory.png">
 
 - As a user, I can click on start button to move from welcome page to home page.
 - As a user, I can choose the mode of the app(dark and light mode).
