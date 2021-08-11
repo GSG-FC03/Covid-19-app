@@ -98,7 +98,7 @@ Search-section {
   color: #4bcc58;
 }
 .vaccine-title {
-  padding-top: 80px;
+  padding-top: 30px;
   font-size: 15px;
   padding-left: 10px;
   text-align: center;
@@ -194,7 +194,7 @@ circle {
   fill: #69e876;
   stroke: #655;
   stroke-width: 50;
-  stroke-dasharray: 60 158; /* 2π × 25 ≈ 158 */
+  /* stroke-dasharray: 60 158; 2π × 25 ≈ 158 */
 }
 svg {
   transform: rotate(-90deg);
@@ -230,4 +230,10 @@ svg {
   margin-left: 60px;
   text-shadow: 2px 2px #dcd4d4;
   margin-top: 20px;
+}
+#number{
+    color: #fbad37;
+    font-size: 18px;
+    margin-left: 80px;
+    margin-top: 20px;
 }
