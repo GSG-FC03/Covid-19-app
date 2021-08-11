@@ -37,7 +37,12 @@ function closeModal(modal) {
   overlay.classList.remove('active')
 }
 //next page 
-document.getElementById("Symptoms-button").onclick = function () {
+const SymptomsButton =document.getElementById("Symptoms-button");
+SymptomsButton.onclick = function () {
     location.href = "../symptoms/symptoms.html";
 
 }
+//pre page
+const backIcon =document.getElementById("back"); 
+backIcon.onclick = function () {
+    location.href = "../home/home.html";}
