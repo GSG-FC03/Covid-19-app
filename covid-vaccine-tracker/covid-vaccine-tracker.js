@@ -8,6 +8,9 @@ icon.onclick = function(){
     }
 }
 
+document.getElementById("back").onclick = function () {
+  location.href = "../home/home.html";
+}
 //popup
 const button = document.querySelector("#Symptoms-button");
 const myCircule = document.getElementById("myCircule")
