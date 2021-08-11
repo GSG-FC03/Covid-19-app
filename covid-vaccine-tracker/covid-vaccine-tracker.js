@@ -235,10 +235,27 @@ let countries = {
   China: "CN",
 };
 
-//
+
 let dataList = document.getElementById("countries");
 let countriesInputList = document.getElementById("selectedCountry");
 let searchCounty = document.getElementById("search-button");
 let number = document.getElementById("number");
 
 searchCounty.addEventListener("click", onClick);
+function onClick() {
+  getVaccineData(countries[countriesInputList.value]);
+}
+window.onload = () => {
+  createDatalist();
+};
+
+function createDatalist() {
+  for (key in countries) {
+    createNewOption = () => {
+      const option = document.createElement("option");
+      option.value = key;
+      dataList.appendChild(option);
+    };
+    createNewOption();
+  }
+}
