@@ -1,5 +1,11 @@
 //popup
+const button = document.querySelector("#Symptoms-button")
 
+
+button.addEventListener("click", move);
+function move() {
+  window.location.href = "../Symptoms/Symptoms.html";
+}
 const openModalButtons = document.querySelectorAll('[data-modal-target]')
 const closeModalButtons = document.querySelectorAll('[data-close-button]')
 const overlay = document.getElementById('overlay')
