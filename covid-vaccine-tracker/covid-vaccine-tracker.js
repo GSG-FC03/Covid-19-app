@@ -234,3 +234,11 @@ let countries = {
   Yemen: "YE",
   China: "CN",
 };
+
+//
+let dataList = document.getElementById("countries");
+let countriesInputList = document.getElementById("selectedCountry");
+let searchCounty = document.getElementById("search-button");
+let number = document.getElementById("number");
+
+searchCounty.addEventListener("click", onClick);
