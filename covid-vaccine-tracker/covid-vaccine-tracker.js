@@ -248,23 +248,16 @@ let dataList = document.getElementById("countries");
 let countriesInputList = document.getElementById("selectedCountry");
 let searchCounty = document.getElementById("search-button");
 let number = document.getElementById("number");
+const total = document.createElement("h1");
+
 
 searchCounty.addEventListener("click", onClick);
 function onClick() {
   getVaccineData(countries[countriesInputList.value]);
 }
-//next page 
-const SymptomsButton =document.getElementById("Symptoms-button");
-SymptomsButton.onclick = function () {
-    location.href = "../symptoms/symptoms.html";
-
-}
-//pre page
-const backIcon =document.getElementById("back"); 
-backIcon.onclick = function () {
-    location.href = "../home/home.html";}
 window.onload = () => {
   createDatalist();
+  
 };
 
 function createDatalist() {
@@ -287,9 +280,12 @@ function getVaccineData(countrycode) {
       for (i = data.timeline.length - 1; i >= 0; i--) {
         if (data.timeline[i].daily > 0) break;
       }
-      const total = document.createElement("h1");
+     
       total.textContent = data.timeline[i].total;
       number.appendChild(total);
       totalPerHundred=(data.timeline[i].totalPerHundred)/100;
     });
   }
+      
+    
+  
