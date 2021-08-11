@@ -59,22 +59,23 @@ Search-section {
   border: none;
   outline: none;
   background-color: #afaaaa9c;
-  width: 200px;
-  height: 45px;
-  border-radius: 40px 1px 0px 40px;
-  margin: 10px;
-  padding-left: 10px;
+  width: 260px;
+  height: 55px;
+  border-radius: 40px 40px 40px 40px;
+  margin: 20px;
+  font-size: 25px;
+  padding-left: 20px;
 }
 #search-button {
   background-color: #fc9906c0;
   color: white;
-  font-size: 18px;
+  font-size: 20px;
   border: none;
   outline: none;
   width: 100px;
-  height: 45px;
-  border-radius: 0px 40px 40px 0px;
-  margin-top: 11px;
+  height: 49px;
+  border-radius: 40px 40px 40px 40px;
+  margin-top: 15px;
 }
 /* Card Style */
 .containar {
