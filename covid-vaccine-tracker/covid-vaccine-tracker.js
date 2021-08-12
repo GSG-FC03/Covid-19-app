@@ -284,6 +284,9 @@ function getVaccineData(countrycode) {
       total.textContent = data.timeline[i].total;
       number.appendChild(total);
       totalPerHundred=(data.timeline[i].totalPerHundred)/100;
+      if (totalPerHundred >1){
+        totalPerHundred =1 ;
+      }
     });
   }
       
