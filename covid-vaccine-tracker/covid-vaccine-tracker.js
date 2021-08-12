@@ -1,6 +1,19 @@
+const icon = document.getElementById("icon");
+icon.onclick = function () {
+  document.body.classList.toggle("dark-mode");
+  if (document.body.classList.contains("dark-mode")) {
+    icon.src = "../assets/sun.svg";
+  } else {
+    icon.src = "../assets/dark-mode.png";
+  }
+};
+
+document.getElementById("back").onclick = function () {
+  location.href = "../home/home.html";
+};
 //popup
 const button = document.querySelector("#Symptoms-button");
-const myCircule = document.getElementById("myCircule")
+const myCircule = document.getElementById("myCircule");
 button.addEventListener("click", move);
 function move() {
   window.location.href = "../Symptoms/Symptoms.html";
@@ -13,9 +26,12 @@ openModalButtons.forEach((button) => {
   button.addEventListener("click", () => {
     const modal = document.querySelector(button.dataset.modalTarget);
     openModal(modal);
-    myCircule.style.setProperty('stroke-dasharray',( (156-156*totalPerHundred).toString()+" "+(156*totalPerHundred).toString()))
-    console.log(totalPerHundred);
-   
+    myCircule.style.setProperty(
+      "stroke-dasharray",
+      (156 - 156 * totalPerHundred).toString() +
+        " " +
+        (156 * totalPerHundred).toString()
+    );
   });
 });
 
@@ -243,13 +259,11 @@ let countries = {
   China: "CN",
 };
 
-
 let dataList = document.getElementById("countries");
 let countriesInputList = document.getElementById("selectedCountry");
 let searchCounty = document.getElementById("search-button");
 let number = document.getElementById("number");
 const total = document.createElement("h1");
-
 
 searchCounty.addEventListener("click", onClick);
 function onClick() {
@@ -257,7 +271,6 @@ function onClick() {
 }
 window.onload = () => {
   createDatalist();
-  
 };
 
 function createDatalist() {
@@ -270,25 +283,31 @@ function createDatalist() {
     createNewOption();
   }
 }
-let totalPerHundred ;
+let totalPerHundred;
 function getVaccineData(countrycode) {
   const url = `https://disease.sh/v3/covid-19/vaccine/coverage/countries/${countrycode}?lastdays=30&fullData=true`;
   let i;
   fetch(url)
-    .then((response) => response.json())
+    .then((response) => {
+      if (response.ok) {
+        return response.json();
+      } else {
+        throw new Error('Something went wrong');
+      }
+    })
     .then((data) => {
       for (i = data.timeline.length - 1; i >= 0; i--) {
         if (data.timeline[i].daily > 0) break;
       }
-     
+
       total.textContent = data.timeline[i].total;
       number.appendChild(total);
       totalPerHundred=(data.timeline[i].totalPerHundred)/100;
       if (totalPerHundred >1){
         totalPerHundred =1 ;
       }
+    })
+    .catch((error) => {
+      console.log(error)
     });
-  }
-      
-    
-  
+}
