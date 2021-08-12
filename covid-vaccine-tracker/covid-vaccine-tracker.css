@@ -48,15 +48,7 @@ header .covid-19 {
   padding-top: 30px;
 }
 /* Style Search bar */
-Search-section {
-  display: flex;
-  flex-wrap: wrap;
-  justify-items: center;
-  margin-left: 10%;
-  margin-top: 50px;
-  z-index: 100;
-  width: 60%;
-}
+
 #selectedCountry {
   border: none;
   outline: none;
@@ -87,7 +79,7 @@ Search-section {
   background: var(--container-color);
   box-shadow: 0px 5px 16px rgba(128, 128, 128, 0.2);
   border-radius: 20px;
-  margin-left: 30px;
+  margin-left: 48px;
   margin-top: 27px;
 }
 .green-img {
@@ -103,7 +95,7 @@ Search-section {
 }
 .vaccine-title {
   padding-top: 30px;
-  font-size: 15px;
+  font-size: 25px;
   padding-left: 10px;
   text-align: center;
   color: var(--fonts-color);
@@ -115,7 +107,7 @@ Search-section {
   background-color: #fbad37;
   color: #ffff;
   margin-top: 30px;
-  margin-left: 90px;
+  margin-left: 120px;
   border-radius: 20px;
   border: none;
   font-size: 25px;
@@ -128,7 +120,7 @@ Search-section {
   border-radius: 20px;
   border: none;
   font-size: 25px;
-  margin-left: 90px;
+  margin-left: 120px;
   margin-top: 40px;
 }
 /* popup style */
@@ -238,7 +230,7 @@ svg {
 }
 #number {
   color: #fbad37;
-  font-size: 18px;
+  font-size: 30px;
   margin-left: 80px;
   margin-top: 20px;
 }
