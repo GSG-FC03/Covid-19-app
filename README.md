@@ -68,7 +68,7 @@ The last page is contact which provide you to know the information that help you
 
 API documentation:
 
-- API (1) : [covid api](https://covid-api.mmediagroup.fr/v1/cases)
+- API (1) : [covid api](https://documenter.getpostman.com/view/10808728/SzS8rjbc)
 
 - API (2) : [vaccine api](https://disease.sh/v3/covid-19/vaccine/coverage/countries?lastdays=1%E2%80%8F)
 
