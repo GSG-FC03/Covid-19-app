@@ -12,6 +12,7 @@ document.getElementById("back").onclick = function () {
   location.href = "../home/home.html";
 };
 //popup
+const total = document.createElement("h1");
 const button = document.querySelector("#Symptoms-button");
 const myCircule = document.getElementById("myCircule");
 button.addEventListener("click", move);
@@ -24,14 +25,19 @@ const overlay = document.getElementById("overlay");
 
 openModalButtons.forEach((button) => {
   button.addEventListener("click", () => {
-    const modal = document.querySelector(button.dataset.modalTarget);
-    openModal(modal);
-    myCircule.style.setProperty(
-      "stroke-dasharray",
-      (156 - 156 * totalPerHundred).toString() +
-        " " +
-        (156 * totalPerHundred).toString()
-    );
+    if(total.textContent){
+      const modal = document.querySelector(button.dataset.modalTarget);
+      openModal(modal);
+      myCircule.style.setProperty(
+        "stroke-dasharray",
+        (156 - 156 * totalPerHundred).toString() +
+          " " +
+          (156 * totalPerHundred).toString()
+      );
+    }
+    else{
+      alert ("please search for a country then try again");
+    }
   });
 });
 
@@ -263,7 +269,7 @@ let dataList = document.getElementById("countries");
 let countriesInputList = document.getElementById("selectedCountry");
 let searchCounty = document.getElementById("search-button");
 let number = document.getElementById("number");
-const total = document.createElement("h1");
+
 
 searchCounty.addEventListener("click", onClick);
 function onClick() {
