@@ -288,7 +288,13 @@ function getVaccineData(countrycode) {
   const url = `https://disease.sh/v3/covid-19/vaccine/coverage/countries/${countrycode}?lastdays=30&fullData=true`;
   let i;
   fetch(url)
-    .then((response) => response.json())
+    .then((response) => {
+      if (response.ok) {
+        return response.json();
+      } else {
+        throw new Error('Something went wrong');
+      }
+    })
     .then((data) => {
       for (i = data.timeline.length - 1; i >= 0; i--) {
         if (data.timeline[i].daily > 0) break;
@@ -296,6 +302,9 @@ function getVaccineData(countrycode) {
 
       total.textContent = data.timeline[i].total;
       number.appendChild(total);
-      totalPerHundred = data.timeline[i].totalPerHundred / 100;
+      totalPerHundred=(data.timeline[i].totalPerHundred)/100;
+    })
+    .catch((error) => {
+      console.log(error)
     });
 }
