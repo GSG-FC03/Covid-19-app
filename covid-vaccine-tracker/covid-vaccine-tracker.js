@@ -17,7 +17,7 @@ const button = document.querySelector("#Symptoms-button");
 const myCircule = document.getElementById("myCircule");
 button.addEventListener("click", move);
 function move() {
-  window.location.href = "../Symptoms/Symptoms.html";
+  window.location.href = "../symptoms/symptoms.html";
 }
 const openModalButtons = document.querySelectorAll("[data-modal-target]");
 const closeModalButtons = document.querySelectorAll("[data-close-button]");
@@ -25,7 +25,7 @@ const overlay = document.getElementById("overlay");
 
 openModalButtons.forEach((button) => {
   button.addEventListener("click", () => {
-    if(total.textContent){
+    if (total.textContent) {
       const modal = document.querySelector(button.dataset.modalTarget);
       openModal(modal);
       myCircule.style.setProperty(
@@ -34,9 +34,8 @@ openModalButtons.forEach((button) => {
           " " +
           (156 * totalPerHundred).toString()
       );
-    }
-    else{
-      alert ("please search for a country then try again");
+    } else {
+      alert("please search for a country then try again");
     }
   });
 });
@@ -270,7 +269,6 @@ let countriesInputList = document.getElementById("selectedCountry");
 let searchCounty = document.getElementById("search-button");
 let number = document.getElementById("number");
 
-
 searchCounty.addEventListener("click", onClick);
 function onClick() {
   getVaccineData(countries[countriesInputList.value]);
@@ -298,7 +296,7 @@ function getVaccineData(countrycode) {
       if (response.ok) {
         return response.json();
       } else {
-        throw new Error('Something went wrong');
+        throw new Error("Something went wrong");
       }
     })
     .then((data) => {
@@ -308,12 +306,12 @@ function getVaccineData(countrycode) {
 
       total.textContent = data.timeline[i].total;
       number.appendChild(total);
-      totalPerHundred=(data.timeline[i].totalPerHundred)/100;
-      if (totalPerHundred >1){
-        totalPerHundred =1 ;
+      totalPerHundred = data.timeline[i].totalPerHundred / 100;
+      if (totalPerHundred > 1) {
+        totalPerHundred = 1;
       }
     })
     .catch((error) => {
-      console.log(error)
+      console.log(error);
     });
 }
