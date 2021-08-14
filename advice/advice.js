@@ -1,6 +1,6 @@
 /*************** Back Icon *********************/
 function backIcon() {
-    window.location.href = "../symptoms/Symptoms.html";
+    window.location.href = "../symptoms/symptoms.html";
 }
 
 /***************Dark Mode***********************/
