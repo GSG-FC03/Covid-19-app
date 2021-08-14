@@ -210,19 +210,19 @@ const search_country_element = document.querySelector(".search-country");
 const country_list_element = document.querySelector(".country-list");
 
 // CREATE THE COUNTRY LIST
-function createCountryList(){
+function createCountryList() {
   const num_countries = country_list.length;
 
   let i = 0, ul_list_id;
 
-  country_list.forEach( (country, index) => {
-      if( index % Math.ceil(num_countries/num_of_ul_lists) == 0){
-          ul_list_id = `list-${i}`;
-          country_list_element.innerHTML += `<ul id='${ul_list_id}'></ul>`;
-          i++;
-      }
+  country_list.forEach((country, index) => {
+    if (index % Math.ceil(num_countries / num_of_ul_lists) == 0) {
+      ul_list_id = `list-${i}`;
+      country_list_element.innerHTML += `<ul id='${ul_list_id}'></ul>`;
+      i++;
+    }
 
-      document.getElementById(`${ul_list_id}`).innerHTML += `
+    document.getElementById(`${ul_list_id}`).innerHTML += `
           <li onclick="fetchData('${country.name}')" id="${country.name}">
           ${country.name}
           </li>
@@ -311,7 +311,9 @@ function fetchData(country) {
       })
       .then((data) => {
         data.forEach((entry) => {
-          recovered_list.push(entry.Cases);
+          if (entry.Cases > 0) {
+            recovered_list.push(entry.Cases);
+          }
         });
       });
     await fetch(
@@ -336,9 +338,7 @@ function fetchData(country) {
 // UPDATE UI FUNCTION
 function updateUI() {
   updateStats();
-  axesLinearChart();
 }
-
 function updateStats() {
   const total_cases = cases_list[cases_list.length - 1];
   const new_confirmed_cases = total_cases - cases_list[cases_list.length - 2];
@@ -365,26 +365,26 @@ function updateStats() {
 
 /*******Dark Mode *************************************************************/
 var icon = document.getElementById("icon");
-        icon.onclick = function(){
-            document.body.classList.toggle("dark-mode");
-            if ( document.body.classList.contains("dark-mode")) {
-                icon.src="../assets/sun.svg";
-            }else{
-                icon.src="../assets/dark-mode.png";
-            }
-        }
+icon.onclick = function () {
+  document.body.classList.toggle("dark-mode");
+  if (document.body.classList.contains("dark-mode")) {
+    icon.src = "../assets/sun.svg";
+  } else {
+    icon.src = "../assets/dark-mode.png";
+  }
+}
 
 
 let changeCountry = document.getElementById('change-country')
-changeCountry.addEventListener('click',()=>{
+changeCountry.addEventListener('click', () => {
   let change = document.getElementById('change')
   change.classList.toggle('notActive')
 })
-/******* Back Button************/ 
-function backIcon(){
-  window.location.href ="../index.html";
+/******* Back Button************/
+function backIcon() {
+  window.location.href = "../index.html";
 }
 /*********** Next Icon ******************/
-function nextIcon(){
-  window.location.href ="../covid-vaccine-tracker/covid-vaccine-tracker.html";
+function nextIcon() {
+  window.location.href = "../covid-vaccine-tracker/covid-vaccine-tracker.html";
 }
